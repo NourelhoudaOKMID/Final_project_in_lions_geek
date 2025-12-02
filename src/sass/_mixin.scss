@@ -1,0 +1,9 @@
+@mixin mydisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin pi-pb{
+    padding-inline: 2vw;
+    padding-block: 1vh;
+}

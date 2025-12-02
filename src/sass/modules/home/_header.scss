@@ -1,1 +1,30 @@
 @import "../../mixin";
+// the top nav bar 
+.first-nav{
+    background-color: $pernav;
+    color: $white;
+    @include mydisplay;
+    padding-inline: 2vw;
+    padding: 15px 50px;
+}
+
+// fix the nav bar item 
+.nav-item{
+    @include mydisplay;
+    gap: 2vw;
+}
+.first-nav button{
+    background-color: $btn;
+    color: $white;
+    border: none;
+    border-radius:25px;
+    @include  pi-pb;
+}
+.first-nav button:hover{
+    background-color: $hoverr;
+}
+
+i{
+    color: $icon;
+}
+// end  top nav bar 

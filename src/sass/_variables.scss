@@ -1,2 +1,16 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+
+$icon:#ffb03b;
+$btn:#d19133;
+$pernav:#1b1613;
+$secnav:#383431;
+$hoverr:#ffb03b;
+$paragraph:#a1a1a1;
+$background-video:#fffaf3;
+$white:#fbfbfb;
+
+$mybox-colors: ("icon": $icon,"btn": $btn,"pernav":$pernav,"secnav":$secnav,"hoverr":$hoverr, "paragraph":$paragraph, "background-video":$background-video,"white":$white);
+$theme-colors: map-merge($mybox-colors, $theme-colors);
+
+
