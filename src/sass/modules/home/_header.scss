@@ -31,12 +31,10 @@ h1
 .nav-item{
     width: 100vw;
     @include mydisplay;
-    gap: 2vw;
     @include  pi-pb;
 }
 .nav-item-left{
     @include mydisplay;
-    gap: 2vw;
 }
 
 .nav-item-right 
