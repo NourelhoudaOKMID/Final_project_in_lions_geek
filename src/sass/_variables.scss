@@ -9,8 +9,9 @@ $hoverr:#ffb03b;
 $paragraph:#a1a1a1;
 $background-video:#fffaf3;
 $white:#fbfbfb;
+$text-color:#ffb03b;
 
-$mybox-colors: ("icon": $icon,"btn": $btn,"pernav":$pernav,"secnav":$secnav,"hoverr":$hoverr, "paragraph":$paragraph, "background-video":$background-video,"white":$white);
+$mybox-colors: ("icon": $icon,"btn": $btn,"pernav":$pernav,"secnav":$secnav,"hoverr":$hoverr, "paragraph":$paragraph, "background-video":$background-video,"white":$white,"text-color":$text-color);
 $theme-colors: map-merge($mybox-colors, $theme-colors);
 
 

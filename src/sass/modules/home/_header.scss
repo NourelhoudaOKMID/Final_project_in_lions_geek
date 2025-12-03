@@ -80,7 +80,9 @@ i{
     @include pi-pb;
 }
 
-
+.text-carousel-img1 h2 span {
+    color: $text-color;
+}
 
 .btn-carousel button{
     @include radio-border;
@@ -92,6 +94,16 @@ i{
         {
         background-color: $hoverr;
         }
+.text-carousel-img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: (-50% );
+}
+img   {
+    filter: blur(2px);
+}
+
 
 
 
