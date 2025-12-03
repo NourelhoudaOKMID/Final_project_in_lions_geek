@@ -18,13 +18,19 @@ $theme-colors: map-merge($mybox-colors, $theme-colors);
 // spacer for  to use in bootstrap 
 $spacer-width: 1vw ;
 @for $i from 1  through 12 {
-  $spacers: map-merge($spacers , ($i : $spacer * $i) );
+  $spacers: map-merge($spacers , ($i : $spacer-width * $i) );
 
 }
 $spacer-height: 1vh ;
 @for $i from 1  through 12 {
-  $spacers: map-merge($spacers , ($i : $spacer * $i) );
+  $spacers: map-merge($spacers , ($i : $spacer-height * $i) );
 
 }
+$spacer-gap: 1vw ;
+@for $i from 1  through 12 {
+  $spacers: map-merge($spacers , ($i : $spacer-gap * $i) );
+
+}
+
 
 
