@@ -14,3 +14,17 @@ $mybox-colors: ("icon": $icon,"btn": $btn,"pernav":$pernav,"secnav":$secnav,"hov
 $theme-colors: map-merge($mybox-colors, $theme-colors);
 
 
+
+// spacer for  to use in bootstrap 
+$spacer-width: 1vw ;
+@for $i from 1  through 12 {
+  $spacers: map-merge($spacers , ($i : $spacer * $i) );
+
+}
+$spacer-height: 1vh ;
+@for $i from 1  through 12 {
+  $spacers: map-merge($spacers , ($i : $spacer * $i) );
+
+}
+
+
