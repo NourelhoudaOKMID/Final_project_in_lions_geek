@@ -1,11 +1,12 @@
 /* Error: Undefined variable.
  *    ,
- * 19 |     background-color: $background-abpout;
- *    |                       ^^^^^^^^^^^^^^^^^^
+ * 13 |     background-color: $tra;
+ *    |                       ^^^^
  *    '
- *   src\sass\modules\home\_main.scss 19:23  @import
- *   src\sass\_allModules.scss 3:9           @import
- *   src\sass\app.scss 5:9                   root stylesheet */
+ *   src\sass\_mixin.scss 13:23               radio-border()
+ *   src\sass\modules\home\_header.scss 52:9  @import
+ *   src\sass\_allModules.scss 2:9            @import
+ *   src\sass\app.scss 5:9                    root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 19 \2502      background-color: $background-abpout;\d\a    \2502                        ^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\sass\\modules\\home\\_main.scss 19:23  @import\a   src\\sass\\_allModules.scss 3:9           @import\a   src\\sass\\app.scss 5:9                   root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502      background-color: $tra;\d\a    \2502                        ^^^^\a    \2575 \a   src\\sass\\_mixin.scss 13:23               radio-border()\a   src\\sass\\modules\\home\\_header.scss 52:9  @import\a   src\\sass\\_allModules.scss 2:9            @import\a   src\\sass\\app.scss 5:9                    root stylesheet";
 }
