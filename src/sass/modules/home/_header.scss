@@ -1,61 +1,87 @@
 @import "../../mixin";
-// the top nav bar
+
+// font of website
+@font-face {
+    font-family: "myfont";
+    src: url(../../../../public/fonts/Satisfy/Satisfy-Regular.ttf);
+}
+
+
 body{
     padding: 0;
     margin: 0;
 } 
-.first-nav{
-    background-color: transparent;
-    color: $white;
-    @include mydisplay;
-    padding-inline: 2vw;
-    padding: 15px 50px;
+h1 
+    ,h2 
+    , h3 
+    ,h4
+    ,h5
+    ,h6{
+        font-family: "myfont";
+    }
+
+
+.nav
+{
+        position: fixed;
+        z-index: 999;
+
 }
-
-
-// fix the nav bar item 
+    
 .nav-item{
+    width: 100vw;
+    @include mydisplay;
+    gap: 2vw;
+    @include  pi-pb;
+}
+.nav-item-left{
     @include mydisplay;
     gap: 2vw;
 }
-.first-nav button{
-    background-color: $btn;
-    color: $white;
-    border: none;
-    border-radius:25px;
-    @include  pi-pb;
-}
-.first-nav button:hover{
-    background-color: $hoverr;
-}
 
+.nav-item-right 
+    button{
+        background-color: $btn;
+        color: $white;
+        border: none;
+        border-radius:25px;
+        
+        }
+.nav-item-right
+        button:hover
+        {
+        background-color: $hoverr;
+        }
+
+
+
+.link a {
+        text-decoration: none;
+        color: $white;
+        padding-inline: 0.5vw
+    }
+
+.link a:hover
+{
+        color: $hoverr;
+}
 i{
     color: $icon;
 }
-// end  top nav bar 
 
-// nav links
-
-.nav-bar{
+.nav-logo-link{
+    width: 100vw;
     @include mydisplay;
-    @include pi-pb; 
+    @include pi-pb;
 }
-.link a {
-    text-decoration: none;
-    color: $white;
-    // pading between item in tag a 
-    padding-inline: 0.5vw;
-    
-}
-.link a:hover{
-    color: $hoverr;
-}
-// the container of the pernav & secnav 
-.PERNAV{
-    background-color: #0c0909e0;
-    position: fixed;
-    top: 0;
-    left: auto;
-    z-index: 999;
-    background-color: transparent;
-}
+
+
+
+
+
+
+
+
+
+
+

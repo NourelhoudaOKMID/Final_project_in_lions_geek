@@ -15376,51 +15376,62 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "myfont";
+  src: url(../../../../public/fonts/Satisfy/Satisfy-Regular.ttf);
+}
 body {
   padding: 0;
   margin: 0;
 }
 
-.first-nav {
-  background-color: transparent;
-  color: #fbfbfb;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 2vw;
-  padding: 15px 50px;
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "myfont";
+}
+
+.nav {
+  position: fixed;
+  z-index: 999;
 }
 
 .nav-item {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2vw;
+  gap: 2vw;
+  padding-inline: 2vw;
+  padding-block: 1vh;
 }
 
-.first-nav button {
+.nav-item-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+  gap: 2vw;
+}
+
+.nav-item-right button {
   background-color: #d19133;
   color: #fbfbfb;
   border: none;
   border-radius: 25px;
-  padding-inline: 2vw;
-  padding-block: 1vh;
 }
 
-.first-nav button:hover {
+.nav-item-right button:hover {
   background-color: #ffb03b;
-}
-
-i {
-  color: #ffb03b;
-}
-
-.nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 2vw;
-  padding-block: 1vh;
 }
 
 .link a {
@@ -15433,13 +15444,18 @@ i {
   color: #ffb03b;
 }
 
-.PERNAV {
-  background-color: rgba(12, 9, 9, 0.8784313725);
-  position: fixed;
-  top: 0;
-  left: auto;
-  z-index: 999;
-  background-color: transparent;
+i {
+  color: #ffb03b;
+}
+
+.nav-logo-link {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+  padding-inline: 2vw;
+  padding-block: 1vh;
 }
 
 /*# sourceMappingURL=app.css.map */
