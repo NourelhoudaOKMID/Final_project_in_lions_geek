@@ -10,7 +10,9 @@ $paragraph:#a1a1a1;
 $background-about:#fffaf3;
 $white:#fbfbfb;
 $text-color:#ffb03b;
-
+$background-about-btn:#fff7eb;
+$background-card-color :rgba(238, 230, 230, 0.26);
+$box-shadow-card: #888888bb;
 $mybox-colors: ("icon": $icon,"btn": $btn,"pernav":$pernav,"secnav":$secnav,"hoverr":$hoverr, "paragraph":$paragraph, "background-about":$background-about,"white":$white,"text-color":$text-color);
 $theme-colors: map-merge($mybox-colors, $theme-colors);
 
