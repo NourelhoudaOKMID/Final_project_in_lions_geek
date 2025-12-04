@@ -18,13 +18,15 @@
 body{
     padding: 0;
     margin: 0;
+    
 } 
 h1 
     ,h2 
     , h3 
     ,h4
-    ,h5
+    ,h5 
     ,h6{
+        font-weight: bold;
         font-family: "myfont";
     }
 
@@ -85,7 +87,10 @@ i{
 }
 
 .btn-carousel button{
-    @include radio-border;
+    background-color: transparent;
+    border-radius:25px;
+    color: $white;
+    border-color: $btn;
     @include pi-pb;
 }
 
